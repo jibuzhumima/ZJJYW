@@ -1,0 +1,289 @@
+
+
+body{
+    margin: 0;
+}
+
+.item1 { grid-area: header; }
+#menu { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6{ grid-area: bottom; }
+.item7{ grid-area: left; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header header'
+    'menu menu menu main main main main main main'
+    'menu menu menu main main main main main main'
+    'menu menu menu main main main main main main'
+    'menu menu menu main main main main main main'
+    'menu menu menu right right right right right right'
+    'bottom bottom bottom bottom bottom bottom bottom bottom bottom';
+
+    grid-gap:   10px;
+    background-color: #f0f0f1;
+    padding: 0px;
+    /*height: 600px;*/
+}
+
+.grid-container > div {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0;
+    font-size: 15px;
+    /*box-sizing: border-box;*/
+}
+
+.item3,.item4,.item5,.item7 {
+    border-radius: 7px;
+}
+
+.item4{
+    border-radius: 7px;
+}
+
+
+.btl{
+    text-align: left;
+}
+
+.logo{
+    padding: 0;
+    margin-left: 5%;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.btl p{
+    margin: 10px 0;
+    padding: 10px;
+    float: left;
+    color: #ef3a3b;
+    /*background-color: #ef3a3b;*/
+    /*border-radius: 5px;*/
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+
+.item1{
+    border-bottom: 3px solid #ef3a3b;
+    margin-bottom:0px;
+    /*height: 90px;*/
+}
+
+/* From uiverse.io by @adamgiebl */
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ed3a3c;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ed3a3c;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #ed3a3c;
+}
+
+button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #ed3a3c;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#login{
+    margin-right: 14%;
+    float: right;
+}
+
+/* From uiverse.io by @adamgiebl */
+#loading-btn {
+    font-family: inherit;
+    font-size: 10px;
+    padding: 0.7em 1em 0.7em 0.9em;
+    align-items: stretch;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    flex-direction: row;flex-wrap: nowrap;align-content: flex-end;
+}
+
+#loading-btn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+#loading-btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#loading-btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+#loading-btn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+#loading-btn:hover span {
+    transform: translateX(5em);
+}
+
+#loading-btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+.item1 li {
+    margin: 20px 0;
+    list-style-type: none;
+    float: right;
+}
+
+.item1 li a {
+    display: block;
+    color: #ed3a3c;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.item1 li a:hover {
+    background-color: #ed3a3c;
+    color: white;
+    border-radius: 7px;
+}
+
+
+.item3{
+    /*max-width: 500px;*/
+}
+
+p{
+    word-break: break-all;
+    margin: 7px;
+    font-size: 20px;
+}
+
+p.biaoti{
+    font-size: 30px;
+}
+
+.teacher{
+    /*padding: 0;*/
+    /*margin-left: 5%;*/
+    width: 100%;
+    height: 100%;
+    /*float: left;*/
+}
+
+
+.item4{
+    background-color: #f0f0f1;
+    border-radius: 10px;
+}
+
+table{
+    border: 10px;
+    /*mso-cellspacing: 10px;*/
+
+}
+
+table tr td{
+    border-radius: 10px;
+    /*border: 1px solid;*/
+    width: 33.3%;
+    height: 100%;
+    padding: 0px;
+
+    box-shadow: 15px 15px 30px #b4abab,
+    -15px -15px 30px #ffffff;
+}
+
+.item4 table td p {
+    font-family:Verdana;
+    padding-left: 20px;
+    padding-right: 5px;
+    font-size: 15px;
+    margin: 0;
+    text-align: left;
+}
+
+.item4 table td img {
+    float: top;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.ming{
+    font-weight: bolder;
+}
+
+/*------------------页脚--------------------*/
+/*页脚 标语*/
+.grid-container .item6 .footer h2,h5{
+    margin: 0;
+}
+/*页脚 网格区*/
+.grid-container .item6{
+
+    background-color: #ed3a3c;
+
+    border-top:2px solid #cb1c1c;
+    color: white;
+    margin-top: 80px;
+}
+/*页脚div*/
+.grid-container .item6 div.footer{
+    font-size: 15px;
+    height: 120px;
+}
+/*页脚 链接*/
+.footer a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.footer p{
+    font-size: 15px;
+}
+
+
+td p{
+    color: rgba(0, 0, 0, 0.44);
+}
+
+td p.ming{
+    color: #000000;
+}

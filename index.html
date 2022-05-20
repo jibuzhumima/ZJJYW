@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.css" type="text/css"/>
+<link rel="stylesheet" href="loing.css" type="text/css"/>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>助嘉教育</title>
+    <style type="text/css">
+
+        body {
+            font-family: Verdana;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        img {
+            border-style: none;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        #menu {
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            width: 200px;
+            border: 1px solid #CCC;
+            border-bottom: none;
+            margin: 0;
+            text-align: center;
+        }
+
+        #menu ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #menu ul li {
+            background: #ffffff;
+            color: #fff;
+            padding: 0px 10px;
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #CCC;
+            /*position: relative;*/
+            /*position: absolute;*/
+        }
+
+        #menu ul li a{
+            color: rgba(237, 59, 61, 0.93);
+        }
+
+        #menu ul li ul {
+            display: none;
+            position: absolute;
+            left: 0px;
+            /*left: 200px;*/
+            /*top: 0px;*/
+            width: 200px;
+            border: 1px solid #ccc;
+            border-bottom: none;
+        }
+
+        #menu ul li ul li {
+            background-color: #ffffff
+        }
+
+        #menu ul li:hover {
+            background-color: rgba(237, 59, 61, 0.93)
+        }
+
+        #menu ul li:hover a.one{
+            color: #ffffff;
+        }
+
+        #menu ul li:hover ul {
+            display: block;
+        }
+
+        #menu ul li:hover ul li ul {
+            display: none;
+        }
+
+        #menu ul li ul li:hover a.two{
+            color: #ffffff;
+        }
+
+        #menu ul li ul li:hover ul{
+            display: block;
+        }
+
+        #menu ul li ul li ul{
+            position: relative;
+            display: none;
+            color: rgba(237, 59, 61, 0.93);
+            left: 190px;
+            top: -35px;
+        }
+
+        #menu ul li ul li ul li:hover a{
+            color: #ffffff;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div class="grid-container">
+    <div class="item1">
+        <div class="btl">
+            <a href="#">
+                <img src="img.png" class="logo">
+                <p>助嘉教育</p>
+                <!-- 弹窗 -->
+                <div id="myModal" class="modal">
+                    <form class="form card">
+                        <div class="card_header">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor" d="M4 15h2v5h12V4H6v5H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6zm6-4V8l5 4-5 4v-3H2v-2h8z"></path>
+                            </svg>
+                            <h1 class="form_heading">登 录</h1>
+                            <span class="form_heading close">x</span>
+                        </div>
+                        <div class="field">
+                            <label for="username">账 号</label>
+                            <input class="input" name="username" type="text" placeholder="请输入账号..." id="username">
+                        </div>
+                        <div class="field">
+                            <label for="password">密 码</label>
+                            <input class="input" name="user_password" type="password" placeholder="请输入密码..." id="password">
+                        </div>
+                        <div class="field">
+                            <button class="button">确认登录</button>
+                        </div>
+                    </form>
+                </div>
+            </a>
+            <a href="#">
+                <button id="login">登录</button>
+            </a>
+            <li><a href="#about">下载应用</a></li>
+            <li><a href="#contact">社区</a></li>
+            <li><a href="#news">选课中心</a></li>
+            <li><a class="active" href="#home">首页</a></li>
+        </div>
+    </div>
+    <div id="menu">
+
+        <ul>
+            <li>
+                <a class="one" href="#">全日制</a>
+                <ul>
+                    <li>
+                        <a class="two" href="#">语言艺术类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="https://wujiaojue.github.io/ZhuJiaJiaoYu/">唱歌</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">跳舞</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">口才</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">看动画学英语</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">体育运动类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">球类运动</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">健身操</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">安全教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">急救知识课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">交通安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">校园安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">网络安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">饮食健康安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">运动安全课程</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">卫生环保教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">健康行为与生活方式</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">疾病预防</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">环境科学知识</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">卫生与环境知识</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">心理健康教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">心理健康教育专题课</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">心里团体辅导课</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">心理健康教育应用课</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">手艺制作类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">绘画类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">剪纸类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">书法类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">雕塑类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">爱国主义及国学传统文化类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">国家和民族历史教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">民族优秀传统文化教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">国情教育</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">科普教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">自然科学科普类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">社会人文科学科普类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">生活小常识科普类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">红色教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">党史教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">南湖革命纪念馆介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">革命传统教育</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">乡土教育</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">马家浜文化</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">月河介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">南湖介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">乌镇介绍</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="one" href="#">寒假班</a>
+                <ul>
+                    <li>
+                        <a class="two" href="#">语言艺术类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">唱歌</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">跳舞</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">口才</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">看动画学英语</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">体育运动类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">球类运动</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">健身操</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">安全教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">急救知识课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">交通安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">校园安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">网络安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">饮食健康安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">运动安全课程</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">卫生环保教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">健康行为与生活方式</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">疾病预防</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">环境科学知识</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">卫生与环境知识</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">心理健康教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">心理健康教育专题课</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">心里团体辅导课</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">心理健康教育应用课</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">手艺制作类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">绘画类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">剪纸类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">书法类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">雕塑类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">爱国主义及国学传统文化类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">国家和民族历史教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">民族优秀传统文化教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">国情教育</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">科普教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">自然科学科普类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">社会人文科学科普类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">生活小常识科普类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">红色教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">党史教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">南湖革命纪念馆介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">革命传统教育</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">乡土教育</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">马家浜文化</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">月河介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">南湖介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">乌镇介绍</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="one" href="#">暑假班</a>
+                <ul>
+                    <li>
+                        <a class="two" href="#">语言艺术类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">唱歌</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">跳舞</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">口才</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">看动画学英语</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">体育运动类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">球类运动</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">健身操</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">安全教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">急救知识课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">交通安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">校园安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">网络安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">饮食健康安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">运动安全课程</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">卫生环保教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">健康行为与生活方式</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">疾病预防</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">环境科学知识</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">卫生与环境知识</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">心理健康教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">心理健康教育专题课</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">心里团体辅导课</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">心理健康教育应用课</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">手艺制作类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">绘画类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">剪纸类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">书法类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">雕塑类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">爱国主义及国学传统文化类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">国家和民族历史教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">民族优秀传统文化教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">国情教育</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">科普教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">自然科学科普类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">社会人文科学科普类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">生活小常识科普类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">红色教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">党史教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">南湖革命纪念馆介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">革命传统教育</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">乡土教育</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">马家浜文化</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">月河介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">南湖介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">乌镇介绍</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="one" href="#">周末班</a>
+                <ul>
+                    <li>
+                        <a class="two" href="#">语言艺术类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">唱歌</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">跳舞</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">口才</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">看动画学英语</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">体育运动类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">球类运动</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">健身操</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">安全教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">急救知识课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">交通安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">校园安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">网络安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">饮食健康安全课程</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">运动安全课程</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">卫生环保教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">健康行为与生活方式</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">疾病预防</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">环境科学知识</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">卫生与环境知识</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">心理健康教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">心理健康教育专题课</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">心里团体辅导课</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">心理健康教育应用课</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">手艺制作类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">绘画类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">剪纸类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">书法类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">雕塑类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">爱国主义及国学传统文化类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">国家和民族历史教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">民族优秀传统文化教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">国情教育</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">科普教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">自然科学科普类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">社会人文科学科普类</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">生活小常识科普类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">红色教育类</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">党史教育</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">南湖革命纪念馆介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">革命传统教育</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="two" href="#">乡土教育</a>
+                        <ul>
+                            <li>
+                                <a class="san" href="#">马家浜文化</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">月河介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">南湖介绍</a>
+                            </li>
+                            <li>
+                                <a class="san" href="#">乌镇介绍</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <div class="item3">
+        <p class="biaoti">助嘉教育</p>
+        <p>
+            嘉兴助嘉教育有限责任公司
+            是一家专业从事以红色教育和乡土教育作为独创性优势的
+        </p>
+        <p>
+            素质教育理论研究、 课程设计、产品研发、
+            平台开发的素质教育公司
+        </p>
+        <p>
+            助嘉教育提出“在线学习更有效”的品牌主张，
+            课程以中小学生基础教育为本
+        </p>
+        <p>
+            通过拓展素质教育，
+            缓解目前青少年素质教育缺乏的现象
+        </p>
+        <p>
+            加强青少年德育教育，
+            使其养成高尚的思想品质和良好的道德情操
+        </p>
+        <p>
+            进一步推动国家素质教育建设
+        </p>
+        <p>
+            为学员建立起更有效的在线学习平台
+        </p>
+        <p>
+            利用科技手段逐渐缩小线上线下的学习体验
+        </p>
+    </div>
+    <div class="item4">
+        <table border="1" cellspacing="30">
+            <tr>
+                <td>
+<!--                    <div class="card">-->
+<!--                        <div class="card-image"></div>-->
+<!--                        <div class="category"> Illustration </div>-->
+<!--                        <div class="heading"> A heading that must span over two lines-->
+<!--                            <div class="author"> By <span class="name">Abi</span> 4 days ago</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <img src="teacher1.jpg" class="teacher">
+                    <p class="ming">金歆哲</p>
+
+                    <p>嘉兴南湖学院大二学生</p>
+                    <p>性格乐观开朗，平时酷爱运动</p>
+                    <p>从小学开始就多次获得运动会的比赛奖项</p>
+                    <p>擅长篮球羽毛球等球类运动，讲课风格独特且富有感染力,善于吸引并培养学生的兴趣</p>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                </td>
+
+                <td>
+                    <img src="teacher2.jpg" class="teacher">
+                    <p class="ming">
+                        沈琦方
+                    </p>
+                    <p>
+                        嘉兴南湖学院大二学生
+                    </p>
+                    <p>
+                        性格温柔热情，平时热爱舞蹈，唱歌
+                    </p>
+                    <p>
+                        曾获校园十佳歌手第一名
+                    </p>
+                    <p>
+                        在唱歌方面具有极高艺术天赋和造诣
+                    </p>
+                    <p>
+                        她的教学格言是全心全意为学生服务 把自己所学全部教给学生，提升学生的素养
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+
+                </td>
+
+                <td>
+                    <img src="teacher3.jpg" class="teacher">
+                    <p class="ming">
+                        龚恩凡
+                    </p>
+                    <p>
+                        嘉兴南湖学院大二学生
+                    </p>
+                    <p>
+                        性格乐观热情，平时热爱跳舞运动
+                    </p>
+                    <p>
+                        现担任学校舞蹈社团团长，具有很好的舞蹈基础和天赋
+                    </p>
+                    <p>
+                        对教学也包有极大的热情，擅于循循善诱
+                    </p>
+                    <p>
+                        热爱与小朋友相处富有爱心和责任心，教学十分耐心
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="item6">
+        <div class="footer">
+            <p>助嘉教育</p>
+            <a href="#"><p>中文| 招募教师 关于我们 联系我们 招兵买马 服务协议 隐私政策 帮助与反馈 侵权投诉</p></a>
+            <h2>红色教育，乡土教育</h2>
+            <h5>New Education, New World</h5>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+<script type="text/javascript" src="loing.js"></script>
